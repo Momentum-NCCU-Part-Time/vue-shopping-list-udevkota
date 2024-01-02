@@ -1,6 +1,7 @@
 <script setup>
   import { ref } from "vue"
   import ListOfItems from './ListOfItems.vue'
+  import NewListForm from './NewListForm.vue'
   
   const list = ref([])
 
@@ -12,8 +13,10 @@
 </script>
 
 <template>
+  <div><NewListForm /></div>
   <div>
     <h1> shopping List Stores</h1>
+  
     <!-- your code here -->
     <ul>
       <li v-for="item in list" :key="store.id">
@@ -28,3 +31,30 @@
 
 <style scoped>
 </style>
+
+
+
+<!-- Testing in Insomnium: POST
+JSON.stringify({ title: "Costco", items: [{item-name: "avocados", purchased: false}, {item-name: "bread", purchased: false}] , updatedAt: new Date() })
+})
+
+actually sent 
+{
+  "title":"Costco",
+  "items":
+    [
+      {
+        "itemName":"avocados","purchased":false}
+    ,
+      {
+        "itemName":"bread","purchased":false
+      }
+    ],
+
+  "updatedAt":"2023-12-17T19:59:18.829Z"}
+
+//problem with this request 
+// doesn't give items their own id number 
+
+
+-->

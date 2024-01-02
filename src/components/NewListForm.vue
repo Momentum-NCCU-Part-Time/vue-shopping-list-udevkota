@@ -33,7 +33,8 @@ const addToList = () => {
 </script>
 
 <template>
-  <form @submit.prevent="addToList">
+  <div>
+    <form @submit.prevent="addToList">
     <fieldset>
       <legend>Add some groceries!</legend>
       <label>
@@ -47,6 +48,7 @@ const addToList = () => {
       <input type="submit" value="Add" />
     </fieldset>
   </form>
+  </div>
 </template>
 
 <style scoped>
