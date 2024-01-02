@@ -1,0 +1,46 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "Sample shopping list",
+      "items": [
+        {
+          "id": 1,
+          "item-name": "toilet paper",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "title": "Costco",
+      "items": [
+        {
+          "itemName": "avocados",
+          "purchased": false
+        },
+        {
+          "itemName": "bread",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2023-12-17T19:59:18.829Z",
+      "id": 2
+    },
+    {
+      "title": "Wholefoods",
+      "items": [
+        {
+          "itemName": "tiramasu",
+          "purchased": false
+        },
+        {
+          "itemName": "yogurt",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2023-12-17T19:59:18.829Z",
+      "id": 3
+    }
+  ]
+}
